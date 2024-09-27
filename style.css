@@ -91,45 +91,43 @@
 
 
 
-/* ============ Home =============== */
-section{
-  height: 100vh;
-}
 .home {
-  background-image: url('img/home.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 123vh;
+  background: url('img/home.jpeg') center/cover no-repeat;
 }
 
-.home_content .home_btn{
+.home_content {
+  width: 700px;
+  margin-left: 90px;
+  padding-top: 144px;
+}
+
+.home_content h1, .home_content h2, .home_content p {
+  color: #fff;
+}
+
+.home_content h1 {
+  font-size: 3.4rem;
+}
+
+.home_content h2 {
+  font-size: 3.24rem;
+  letter-spacing: 0.7px;
+}
+
+.home_content p {
+  color: #b8c0d3;
+  margin: 27px 0 45px;
+  font-size: 20px;
+}
+
+.home_content .home_btn {
   padding: 20px 50px;
   background: var(--btn-color);
   font-size: 15px;
   border: none;
 }
 
-.home_content h1{
-  color: #fff;
-  font-size: 3.4rem;
-}
-.home_content h2{
-  color: #fff;
-  letter-spacing: .7px;
-  font-size: 3.24rem;
-}
-
-.home_content p{
-  color: #b8c0d3;
-  margin-top: 27px;
-  margin-bottom: 45px;
-  font-size: 20px;
-}
-.home_content {
-  width: 700px;
-  margin-left: 90px;
-  padding-top: 144px;
-}
 
 /*=============== FOOTER ===============*/
 footer {
