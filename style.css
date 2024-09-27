@@ -1,0 +1,436 @@
+/*=============== FONT STYLE ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+/*=============== VARIABLES ===============*/
+:root {
+  --primary-color: #8dc63f;
+  --secondary-color: #a3d163;
+  --light-color: #929fa9;
+  --dark-color: #232c35;
+  --text-color: #435169;
+  --border-color: #898686;
+}
+
+/*=============== BASE STYLES ===============*/
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  list-style: none;
+}
+
+/*=============== NAVIGATION STYLES ===============*/
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 25px;
+  padding-bottom: 30px;
+}
+
+.navbar-brand {
+  padding-left: 20px;
+}
+
+.nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav li a {
+  color: #000;
+  padding: 10px;
+}
+
+.nav li a:hover,
+.nav li a.active {
+  color: var(--secondary-color);
+}
+
+/*=============== BUTTONS ===============*/
+.sign_btn {
+  padding: 10px 40px;
+  font-size: 20px;
+  border-radius: 40px;
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sign_btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn_box a i {
+  margin-left: 10px;
+}
+
+/*=============== MENU BAR ===============*/
+.menu_bar {
+  display: none;
+  cursor: pointer;
+}
+
+.menu_bar i {
+  font-size: 30px;
+  color: #000;
+}
+
+/*=============== FOOTER ===============*/
+footer {
+  background: var(--dark-color);
+  height: 485px;
+}
+
+footer .cal {
+  margin-top: 92px;
+}
+
+footer .cal:first-child {
+  margin-left: 132px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+  color: var(--light-color);
+}
+
+footer a {
+  font-size: 15px;
+  color: var(--light-color);
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+footer h4 {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+/*=============== FOOTER IMAGE AND TEXT ===============*/
+.footer_img_box {
+  position: relative;
+  display: inline-block;
+}
+
+.img_content p {
+  color: var(--light-color);
+  font-size: 11px;
+  line-height: 1.2;
+  width: 100px;
+  margin: 0;
+}
+
+.img_content {
+  position: absolute;
+  bottom: -10px;
+  left: 100px;
+  padding: 2px;
+}
+
+/*=============== SOCIAL ICONS ===============*/
+.social i {
+  color: var(--light-color);
+  font-size: 20px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+/*=============== FORM STYLING ===============*/
+.form_box input {
+  width: 255px; /* Increased for better usability */
+  height: 35px;
+  border-radius: 40px;
+  border: 1px solid var(--border-color);
+  background: var(--dark-color);
+  padding-left: 30px;
+  margin-right: 10px;
+}
+
+.form_box input::placeholder {
+  color: #434e57;
+  font-size: 12px;
+}
+.btn_box {
+  padding-right: 35px;
+}
+.btn-success {
+  padding: 8px 13px;
+  font-size: 12px;
+  border-radius: 40px;
+  text-decoration: none;
+  color: white;
+  background: #009ddd;
+}
+
+.btn-success i {
+  margin-right: 5px;
+}
+.copyrite p {
+  margin-left: 50px;
+  margin-top: 60px;
+  font-size: 15.1px;
+  color: #fff;
+}
+.copyrite {
+  margin-left: 55px;
+}
+
+/*=============== BASE MEDIA QUERIES ===============*/
+@media screen and (max-width: 1400px) {
+  .bottom-header img {
+    width: 120px;
+    height: 50px;
+  }
+  .nav li a {
+    font-size: 12px;
+  }
+  .bottom-header .navbar-brand {
+    padding-left: 10px;
+  }
+  footer .cal:first-child {
+    margin-left: 60px;
+  }
+  .img_content {
+    left: 63px;
+    bottom: -16px;
+  }
+  .copyrite p {
+    font-size: 10px;
+    margin-left: 15px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  .sign_btn {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+  .footer_img_box img,
+  .footer_img_box img {
+    width: 200px;
+    height: auto;
+  }
+  footer .cal {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .navbar-brand {
+    padding-left: 10px;
+  }
+  .nav li {
+    margin-left: 10px;
+  }
+  .sign_btn {
+   display: none;
+  }
+  .top-header .container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav {
+    flex-direction: row;
+    align-items: center;
+    display: none;
+  }
+  .menu_bar {
+    display: block;
+    margin-right: 20px;
+  }
+  .nav li {
+    margin-bottom: 10px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .bottom_header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sign_btn {
+    padding: 5px 20px;
+  }
+  .bottom-header .navbar-brand {
+    padding-left: 10px;
+  }
+  .form_box input {
+    width: 200px;
+  }
+  footer {
+    height: 100%;
+    .footer_box {
+      flex-direction: column;
+    }
+  }
+  footer h4,
+  footer a {
+    font-size: 35px;
+    text-align: center;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  footer .cal {
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .img_content {
+    bottom: -19px;
+    left: 450px;
+    text-align: left;
+  }
+  .social {
+    margin-top: 20px;
+  }
+  .copyrite p {
+    font-size: 19px;
+  }
+  footer p {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .form_box input {
+    width: 200px;
+  }
+  .social i {
+    font-size: 18px;
+    padding: 5px;
+  }
+  footer .cal {
+    margin-left: 0;
+  }
+  .img_content {
+    bottom: -19px;
+    left: 340px;
+    text-align: left;
+  }
+  .nav-container {
+    display: none; /* Hide the navigation links on mobile */
+  }
+
+  .menu_bar {
+    display: block;
+  }
+
+  .bottom-header {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .navbar-brand img {
+    width: 180px; /* Resize the logo for smaller screens */
+    height: auto;
+  }
+
+  .btn_box {
+    display: none; /* Hide sign-up button on smaller screens */
+  }
+
+  /* Mobile Navigation (when menu is active) */
+  .nav-mobile {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-mobile .nav-item {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .nav-mobile .nav-link {
+    padding: 15px;
+    color: #000;
+  }
+
+  .nav-mobile .nav-link:hover,
+  .nav-mobile .nav-link.active {
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .top-header .container {
+    justify-content: center;
+    text-align: center;
+  }
+  .sign_btn {
+    padding: 2px 10px;
+  }
+  footer p {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container .phone,
+  .container .contact,
+  .container select {
+    font-size: 10px;
+  }
+  .container .phone,
+  .container .contact,
+  .container select {
+    font-size: 0.5rem;
+  }
+  .sign_btn {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+  footer h4 {
+    font-size: 22px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+  footer a {
+    font-size: 15px;
+  }
+  .footer_img_box img {
+    width: 120px;
+  }
+  .form_box input {
+    width: 160px;
+  }
+  .img_content {
+    bottom: -25px;
+    left: 150px;
+    text-align: left;
+  }
+  .copyrite {
+    margin-left: 5px;
+  }
+  .copyrite p {
+    font-size: 10px;
+  }
+  footer .cal:first-child {
+    margin-left: 0px;
+  }
+}
