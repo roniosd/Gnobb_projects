@@ -88,52 +88,46 @@
   font-size: 30px;
   color: #000;
 }
-
 .home {
-  height: 117vh;
+  min-height: 100vh;
   width: 100%;
   background: url("img/home.jpeg");
-  width: 100%;
   background-repeat: no-repeat;
   background-position: top 25% right 0;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-top: 140px;
+  padding-left: 80px;
   z-index: 1000;
 }
 
-.home_content {
-  width: 700px;
-  margin-left: 90px;
-  padding-top: 144px;
-}
-
-.home_content h1,
-.home_content h2,
-.home_content p {
+.home h1,
+.home h2,
+.home p {
   color: #fff;
 }
 
-.home_content h1 {
+.home h1 {
   font-size: 3.4rem;
 }
 
-.home_content h2 {
-  font-size: 3.24rem;
+.home h2 {
+  font-size: 3.2rem;
   letter-spacing: 0.7px;
 }
 
-.home_content p {
+.home p {
   color: #b8c0d3;
   margin: 27px 0 45px;
   font-size: 20px;
 }
 
-.home_content .home_btn {
+.home .home_btn {
   padding: 20px 50px;
   background: var(--btn-color);
-  font-size: 15px;
+  font-size: 20px;
   border: none;
 }
 
@@ -236,7 +230,6 @@ footer h4 {
   font-size: 15.1px;
   color: #fff;
 }
-
 /*=============== BASE MEDIA QUERIES ===============*/
 @media screen and (max-width: 1400px) {
   .bottom-header img {
@@ -284,40 +277,31 @@ footer h4 {
 }
 @media screen and (max-width: 1300px) {
   .home {
-    height: 90vh;
+    min-height: 100vh;
   }
 }
-  @media screen and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   .navbar-brand {
     padding-left: 10px;
   }
-  .nav li {
-    margin-left: 10px;
-  }
+
   .sign_btn {
     display: none;
   }
-  .top-header .container {
-    flex-direction: row;
-    align-items: center;
-  }
+
   .nav {
-    flex-direction: row;
-    align-items: center;
     display: none;
   }
   .menu_bar {
     display: block;
     margin-right: 20px;
   }
-  .nav li {
-    margin-bottom: 10px;
-  }
+
   .home {
-    height: 126vh;
+    min-height: 120vh;
   }
-  .copyrite p{
-    font-size: 15px;
+  .copyrite p {
+    font-size: 17px;
     margin-left: 50px;
   }
 }
@@ -333,41 +317,11 @@ footer h4 {
   .bottom-header .navbar-brand {
     padding-left: 10px;
   }
-
-  .home_content {
-    width: 100%;
-    margin-left: 20px;
-    padding-top: 80px;
-  }
-
-  .home_content h1 {
-    font-size: 2.4rem;
-  }
-
-  .home_content h2 {
-    font-size: 2.2rem;
-  }
-
-  .home_content .home_btn {
-    padding: 15px 40px;
-    font-size: 14px;
-  }
-
-  .home {
-    height: 40vh;
-  }
-  .home_content p {
-    width: 800px;
-  }
-
-  .form_box input {
-    width: 200px;
+  .home{
+    min-height: 100vh;
   }
   footer {
     height: 100%;
-    .footer_box {
-      flex-direction: column;
-    }
   }
   footer h4,
   footer a {
@@ -399,30 +353,15 @@ footer h4 {
   footer p {
     font-size: 35px;
   }
+  
 }
 
 @media screen and (max-width: 768px) {
-  .form_box input {
-    width: 200px;
+  footer .footer_box {
+    flex-direction: column;
   }
-  .social i {
-    font-size: 18px;
-    padding: 5px;
-  }
-  footer .cal {
+  footer .cal:first-child {
     margin-left: 0;
-  }
-  .img_content {
-    bottom: -19px;
-    left: 340px;
-    text-align: left;
-  }
-  .nav-container {
-    display: none; /* Hide the navigation links on mobile */
-  }
-
-  .menu_bar {
-    display: block;
   }
 
   .bottom-header {
@@ -431,44 +370,16 @@ footer h4 {
   }
 
   .navbar-brand img {
-    width: 180px; /* Resize the logo for smaller screens */
+    width: 180px;
     height: auto;
   }
 
   .btn_box {
-    display: none; /* Hide sign-up button on smaller screens */
-  }
-
-  /* Mobile Navigation (when menu is active) */
-  .nav-mobile {
-    display: block;
-    background-color: #fff;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-mobile .nav-item {
-    display: block;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .nav-mobile .nav-link {
-    padding: 15px;
-    color: #000;
-  }
-
-  .nav-mobile .nav-link:hover,
-  .nav-mobile .nav-link.active {
-    background-color: var(--secondary-color);
-    color: #fff;
+    display: none;
   }
 
   .home {
-    height: 50vh;
+    min-height: 80vh;
   }
   .home_content p {
     width: 750px;
@@ -480,79 +391,46 @@ footer h4 {
   .copyrite p {
     font-size: 15px;
   }
-}
-
-@media screen and (max-width: 576px) {
-  .top-header .container {
-    justify-content: center;
-    text-align: center;
-  }
-  .sign_btn {
-    padding: 2px 10px;
-  }
-  .home {
-    height: 80vh;
-  }
-  .home_content p {
-    width: 510px;
-  }
-  footer p {
-    font-size: 35px;
-  }
-
-  footer .cal:first-child {
-    margin-left: 0px;
-  }
-  .copyrite p{
-    font-size: 12px;
-    margin-left: 20px;
+  .img_content {
+    bottom: -19px;
+    left: 340px;
+    text-align: left;
   }
 }
 
-@media screen and (max-width: 440px) {
-  .container .phone,
-  .container .contact,
-  .container select {
-    font-size: 10px;
-  }
+@media screen and (max-width: 540px) {
   .container .phone,
   .container .contact,
   .container select {
     font-size: 0.5rem;
   }
-  .sign_btn {
-    font-size: 16px;
-    padding: 8px 15px;
-  }
 
-  .home_content {
-    width: 100%;
-    margin-left: 10px;
-    padding-top: 50px;
-  }
   .home {
-    height: 45vh;
+    min-height: 60vh;
+    padding-left: 10px;
+    padding-top: 60px;
   }
 
-  .home_content h1 {
-    font-size: 1.8rem;
+  .home h1 {
+    font-size: 2.1rem;
   }
 
-  .home_content h2 {
-    font-size: 1.6rem;
+  .home h2 {
+    font-size: 1.79rem;
     letter-spacing: 0.3px;
   }
 
-  .home_content p {
-    font-size: 13px;
-    width: 370px;
+  .home p {
+    font-size: 11px;
   }
 
-  .home_content .home_btn {
+  .home .home_btn {
     padding: 10px 30px;
     font-size: 12px;
   }
-
+  footer .cal:first-child {
+    margin-left: 0px;
+  }
   footer h4 {
     font-size: 22px;
   }
@@ -562,35 +440,33 @@ footer h4 {
   footer a {
     font-size: 15px;
   }
-  .footer_img_box img {
-    width: 120px;
+  .form_box input{
+    width: 180px;
   }
-  .form_box input {
-    width: 160px;
-  }
+  .form_box .btn-success {
+    padding: 10px 20px;
+}
   .img_content {
-    bottom: -25px;
-    left: 150px;
+    bottom: -20px;
+    left: 230px;
     text-align: left;
   }
-  .copyrite {
-    margin-left: 5px;
-  }
   .copyrite p {
-    font-size: 9px;
-  }
-  footer .cal:first-child {
-    margin-left: 0px;
+    font-size: 10px;
+    margin-left: 10px;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 390px) {
   .home {
-    height: 60vh;
+    min-height: 70vh;
+    padding-top: 80px;
   }
   .home_content p {
     width: 328px;
   }
   .copyrite p {
-    font-size: 7px;
+    font-size: 9px;
+    margin-left: 7px;
   }
+  
 }
