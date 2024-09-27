@@ -9,6 +9,7 @@
   --dark-color: #232c35;
   --text-color: #435169;
   --border-color: #898686;
+  --btn-color:#009ddd;
 }
 
 /*=============== BASE STYLES ===============*/
@@ -86,6 +87,48 @@
 .menu_bar i {
   font-size: 30px;
   color: #000;
+}
+
+
+
+/* ============ Home =============== */
+section{
+  height: 100vh;
+}
+.home {
+  background-image: url('img/home.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home_content .home_btn{
+  padding: 20px 50px;
+  background: var(--btn-color);
+  font-size: 15px;
+  border: none;
+}
+
+.home_content h1{
+  color: #fff;
+  font-size: 3.4rem;
+}
+.home_content h2{
+  color: #fff;
+  letter-spacing: .7px;
+  font-size: 3.24rem;
+}
+
+.home_content p{
+  color: #b8c0d3;
+  margin-top: 27px;
+  margin-bottom: 45px;
+  font-size: 20px;
+}
+.home_content {
+  width: 700px;
+  margin-left: 90px;
+  padding-top: 144px;
 }
 
 /*=============== FOOTER ===============*/
@@ -238,7 +281,7 @@ footer h4 {
     margin-left: 10px;
   }
   .sign_btn {
-   display: none;
+    display: none;
   }
   .top-header .container {
     flex-direction: row;
@@ -256,7 +299,6 @@ footer h4 {
   .nav li {
     margin-bottom: 10px;
   }
-
 }
 
 @media screen and (max-width: 992px) {
@@ -309,7 +351,6 @@ footer h4 {
 }
 
 @media screen and (max-width: 768px) {
-  
   .form_box input {
     width: 200px;
   }
