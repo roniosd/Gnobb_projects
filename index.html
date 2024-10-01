@@ -16,86 +16,429 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="top-header bg-light py-2">
-        <div class="container d-flex justify-content-end align-items-center">
-          <div>
-            <span class="me-3 phone">+880 1521 326 387</span>
-          </div>
-          <div>
-            <a
-              style="margin-right: 25px; margin-left: 20px"
-              href="#"
-              class="text-decoration-none text-dark contact"
-              >Contact Us</a
-            >
-          </div>
-          <div class="select_box">
-            <select class="me-2" aria-label="Language selection">
-              <option value="en">English</option>
-              <option value="bn">Bangla</option>
-            </select>
-          </div>
-          <div>
-            <a href="#" aria-label="Search" class="text-dark">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-          </div>
+    <div class="top-header bg-light">
+      <div class="container d-flex justify-content-end align-items-center">
+        <div>
+          <span class="me-3 phone">+880 1521 326 387</span>
+        </div>
+        <div>
+          <a
+            style="margin-right: 25px; margin-left: 20px"
+            href="#"
+            class="text-decoration-none text-dark contact"
+            >Contact Us</a
+          >
+        </div>
+        <div class="select_box">
+          <select class="me-2 selects" aria-label="Language selection">
+            <option value="en">English</option>
+            <option value="bn">Bangla</option>
+          </select>
+        </div>
+        <div>
+          <a href="#" aria-label="Search" class="text-dark">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
         </div>
       </div>
+    </div>
 
-      <div
-        class="bottom-header d-flex justify-content-between align-items-center py-2"
-      >
+    <header class="navbar navbar-expand-lg navbar-light border-bottom">
+      <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="img/logo.png" width="250" height="75" alt="Gnobb Logo" />
+          <img src="img/logo1.png" alt="GNOBB Logo" height="47" width="46" />
+          <img
+            src="img/logo2.png"
+            alt="GNOBB Logo-2"
+            height="23"
+            width="116.94"
+          />
         </a>
 
-        <div class="nav-container">
-          <ul class="nav">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Members</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News & Events</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">GNOBB Awards</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">5th ICHBA 2023</a>
+              <a class="nav-link" href="#members">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News & Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#awards">GNOBB Awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ichba">5th ICHBA 2023</a>
             </li>
           </ul>
+          <a href="#" class="btn nav_btn btn-success d-flex"
+            >Sign Up <img src="img/araw.svg" alt=""
+          /></a>
         </div>
-
-        <div class="btn_box">
-          <a class="btn sign_btn" href="#"
-            >Sign Up <i class="fa-solid fa-arrow-right"></i
-          ></a>
-        </div>
-
         <div class="menu_bar">
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
     </header>
 
-    <section class="home">
-        <h1><b>Welcome to GNOBB:</b></h1>
-        <h2>Connecting Bangladeshi Biotechnologists Worldwide</h2>
+    <section class="hero hero-section d-flex justify-content-start">
+      <div class="hero_container">
+        <h1>
+          <span>Welcome to GNOBB:</span> Connecting Bangladeshi Biotechnologists
+          Worldwide
+        </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deleniti
-          dolorem consequuntur voluptatem blanditiis odit, similique quo quos cum a
-          rem esse pariatur eius minus rerum neque!
+          Discover a vibrant community of Bangladeshi biotechnologists united
+          under GNOBB's global network. Join us in advancing biotechnology for
+          health, agriculture, and the environment.
         </p>
-        <a class="btn btn-success home_btn" href="#">Learn More</a>
+        <a href="#" class="btn home_btn btn-success">Learn More</a>
+      </div>
     </section>
-    
+
+    <section class="home_section section_p">
+      <div class="about_boxs section_pd d-flex justify-content-between">
+        <div class="box box1">
+          <img src="img/icon-1.png" alt="" />
+          <div class="description">
+            <h2>Joni GNOBB</h2>
+            <p>
+              Snap and categorize receipts in seconds and link your ban account
+            </p>
+            <a class="btn btn-success home_btn" href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/icon-2.png" alt="" />
+          <div class="description">
+            <h2>Call for Nomination</h2>
+            <p>
+              Set up payroll and bounses for all your employees, and never be
+              late on salaries
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/icon-3.png" alt="" />
+          <div class="description">
+            <h2>5th ICHBA 2023</h2>
+            <p>
+              Get Real-time visibility into every expense and payment, with a
+              neat dashbord.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about_2 d-flex justify-content-between">
+        <img src="img/banner-1.png" alt="" />
+        <div class="description">
+          <h1>Global Network of<br />Bangladeshi Biotechnologists</h1>
+          <p>
+            GNOBB was born as a web-based organization in 2004 in order to
+            provide a forum for networking of Biotechnologists with origins
+            formBangladesh. The idea was initiated by Dr.Ahmad Shamsul Islam.
+            The website was thenlaunched and coordinated ewer since by the
+            latter with oversightform Dr.Abid and rest of the Founder members
+          </p>
+          <a class="btn btn-success btn_2" href="#">Explore more</a>
+        </div>
+      </div>
+
+      <div class="inter_section">
+        <h1>GNOBB'S Areas of Itervention</h1>
+        <div class="inter_boxs d-flex justify-content-between">
+          <div class="inter_box inter_box1">
+            <div class="description">
+              <h2>biotechnology<br />Education Enhancement</h2>
+              <p>
+                GNOBB Could focus on enhancing bitechnology<br />education bin
+                Bangladesh by organizing<br />workshops, seminars, and online
+                courses.
+              </p>
+              <a
+                class="inter_btn inter_btn1 d-flex justify-content-center align-items-center"
+                href="#"
+                ><i
+                  class="fa-solid fa-arrow-right d-flex align-items-center justify-content-center"
+                ></i>
+                Learn More</a
+              >
+            </div>
+            <img src="img/inter_sec_1.jpg" alt="" />
+          </div>
+          <div class="inter_box">
+            <div class="description">
+              <h2>Sustainable<br />Agriculture</h2>
+              <p>
+                GNOBB can play a pivotal role in promotiog agri<br />-bitechnology
+                practices that enhance crop <br />productivity and resilience
+              </p>
+              <a
+                class="inter_btn inter_btn2 d-flex justify-content-center align-items-center"
+                href="#"
+                ><i
+                  class="fa-solid fa-arrow-right d-flex align-items-center justify-content-center"
+                ></i>
+                Learn More</a
+              >
+            </div>
+            <img src="img/inter_sec_2.jpg" alt="" />
+          </div>
+          <div class="inter_box item-3 d-flex">
+            <div class="description">
+              <h2>Biomedicat Research<br />Collaboration</h2>
+              <p>
+                This intervention to accelerate the development<br />of
+                diagnostics, treatments,and therapies taioored to the country's
+                healthcare needs.
+              </p>
+              <a
+                class="inter_btn d-flex justify-content-center align-items-center"
+                href="#"
+                ><i
+                  class="fa-solid fa-arrow-right d-flex align-items-center justify-content-center"
+                ></i>
+                Learn More</a
+              >
+            </div>
+            <div class="img_box">
+              <img class="inter_img" src="img/inter_sec_3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card_container">
+        <h1>Articles & Resources</h1>
+        <div class="allDetails d-flex">
+          <div class="left_site">
+            <div class="left_card">
+              <img src="img/view.jpg" alt="" />
+            </div>
+            <div class="card-body">
+              <p class="text-muted">Feb 13, 2024 - COVID-19</p>
+              <h4 class="card-title">
+                Sadia Khanom’s paradigm to<br />wipe out COVID-19
+              </h4>
+            </div>
+          </div>
+
+          <div class="right_site">
+            <div class="d-flex box_card">
+              <img src="img/card-1.jpg" class="card-img" alt="Article image" />
+              <div class="card-body">
+                <p>Feb 13, 2024 - Biomedical</p>
+                <h6 class="card-title">
+                  Congratulations Prof. Akhter Hossain and team!
+                </h6>
+              </div>
+            </div>
+            <div class="bottom_border"></div>
+
+            <div class="d-flex box_card">
+              <img src="img/card-2.jpg" class="card-img" alt="Article image" />
+              <div class="card-body">
+                <p>Feb 13, 2024 - Biomedical</p>
+                <h6 class="card-title">
+                  Unveiling the Biomedical Potential in Agricultural Gene
+                  Research
+                </h6>
+              </div>
+            </div>
+            <div class="bottom_border"></div>
+
+            <div class="d-flex box_card">
+              <img src="img/card-3.jpg" class="card-img" alt="Article image" />
+              <div class="card-body">
+                <p>Feb 13, 2024 - Agriculture</p>
+                <h6 class="card-title">
+                  Pioneering Biomedical Solutions in Agriculture
+                </h6>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <a href="#" class="btn btn-outline-primary">View Articles -></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <h1>GNOBB’S Publication</h1>
+      <div
+        class="banner_items section_p d-flex justify-content-between align-items-center"
+      >
+        <div class="banner_item">
+          <img class="first_img" src="img/banner-1.jpg" alt="" />
+          <div class="discription">
+            <h2>Scientific American</h2>
+            <p>January</p>
+          </div>
+        </div>
+
+        <div class="banner_item">
+          <img src="img/banner-2.jpg" alt="" />
+          <div class="discription">
+            <h2>Scientific American</h2>
+            <p>January</p>
+          </div>
+        </div>
+
+        <div class="banner_item">
+          <img src="img/banner-3.jpg" alt="" />
+          <div class="discription">
+            <h2>Scientific American</h2>
+            <p>January</p>
+          </div>
+        </div>
+
+        <div class="banner_item">
+          <img src="img/banner-4.png" alt="" />
+          <div class="discription">
+            <h2>Scientific American</h2>
+            <p>January</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video_cont">
+      <div class="cont section_p">
+        <div>
+          <div class="section-title">
+            <h2>See what our researchers are saying</h2>
+            <p>2,157 people had attended on our last event ICHBA 2023</p>
+          </div>
+
+          <div class="d-flex justify-content-between video_container">
+            <div>
+              <div>
+                <div class="video-thumbnail">
+                  <img src="img/video-1.jpg" alt="Video Thumbnail" />
+                  <span class="video-play-button"
+                    ><img src="img/play_icon.png" alt=""
+                  /></span>
+                  <span class="video-time">07:55</span>
+                </div>
+
+                <div class="card-body">
+                  <h5>GNOBB recognize and honor outstanding scientists</h5>
+                  <p class="card-text">Feb 13, 2024 - COVID19</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <div class="border-0">
+                <div class="video-thumbnail">
+                  <img src="img/video-2.jpg" alt="Video Thumbnail" />
+                  <span class="video-play-button"
+                    ><img src="img/play_icon.png" alt=""
+                  /></span>
+                  <span class="video-time">41:55</span>
+                </div>
+                <div class="card-body">
+                  <h5>
+                    GNOBB contribute to capacity building in the field of
+                    biotechnology
+                  </h5>
+                  <p>Feb 13, 2024 - COVID19</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="last section_p">
+      <div class="container last_container faq-section">
+        <div class="last_boxs d-flex">
+          <div class="col-md-6 left_con">
+            <div class="faq-card">
+              <h3>FAQs</h3>
+              <p>
+                GNOBB was born as a web-based<br />organization in 2004 in order
+                to provide a<br />forum for networking of Biotechnologists
+                with<br />origins from Bangladesh. The idea was initiated<br />by
+                Dr. Abidur Rahman and retired Professor of<br />Botany, Dr.
+                Ahmad Shamsul Islam. The website<br />was then launched.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between flex-column right_con">
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="accordion-header">
+                What is GNOBB and what does it stand for?
+              </h2>
+              <img width="13" height="7" src="img/drop-down.svg" alt="" />
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="accordion-header">
+                Who can join GNOBB and how can one become a member?
+              </h2>
+              <img width="13" height="7" src="img/drop-down.svg" alt="" />
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="accordion-header">
+                What are the main objectives of GNOBB?
+              </h2>
+              <img width="13" height="7" src="img/drop-down.svg" alt="" />
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="accordion-header">
+                What types of events and activities does GNOBB organize?
+              </h2>
+              <img width="13" height="7" src="img/drop-down.svg" alt="" />
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="accordion-header">
+                How does GNOBB recognize and honor outstanding scientists?
+              </h2>
+              <img width="13" height="7" src="img/drop-down.svg" alt="" />
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="accordion-header">
+                Can undergraduate students join GNOBB?
+              </h2>
+              <img width="13" height="7" src="img/drop-down.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="contact-card d-flex justify-content-between align-items-center"
+        >
+          <div class="fotter_left">
+            <h4>Still have questions?</h4>
+            <p>
+              Can't find the answer you're looking for? Please get in touch with
+              our team.
+            </p>
+          </div>
+          <div class="text-right">
+            <a href="#" class="btn">View Articles -></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
-      <div class="d-flex p-2 justify-content-between footer_box">
+      <div class="d-flex justify-content-between footer_box section_p">
         <div class="cal d-flex flex-column">
           <h4>About GNOBB</h4>
           <a href="#">Home</a>
@@ -132,20 +475,31 @@
 
         <div class="cal d-flex flex-column">
           <div class="footer_img_box">
-            <img width="300px" height="100px" src="img/logo.png" alt="Logo" />
+            <a class="navbar-brand" href="#">
+              <img
+                src="img/logo1.png"
+                alt="GNOBB Logo"
+                height="41"
+                width="41"
+              />
+              <img
+                class="img-2"
+                src="img/logo2.png"
+                alt="GNOBB Logo-2"
+                height="30"
+                width="156"
+              />
+            </a>
             <div class="img_content">
               <p>Global Network of Bangladeshi Biotechnologists</p>
             </div>
           </div>
 
           <div class="social">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
+            <img src="img/social.png" alt="" />
           </div>
 
-          <p>Subscribe to avail our special updates</p>
+          <p class="text-sub">Subscribe to avail our special updates</p>
           <div
             class="d-flex form_box justify-content-center align-items-center"
           >
@@ -160,7 +514,7 @@
         </div>
       </div>
 
-      <div class="copyrite d-flex justify-content-start">
+      <div class="copyrite_box d-flex justify-content-start section_p">
         <p>Terms & Conditions</p>
         <p>Privacy</p>
         <p>Cookies</p>
