@@ -116,6 +116,9 @@ header {
   padding-top: 140px;
   z-index: 1000;
 }
+.hero-2{
+  background: url(img/hero-2.png);
+}
 .hero_container h1 {
   font-weight: 400;
   font-size: 48px;
@@ -150,6 +153,9 @@ header {
   font-weight: 500;
   color: #ffffff;
   background: #009ddd;
+}
+.hero_container .hero_btn-2{
+  background: #8DC63F;
 }
 .carousel-indicators {
   display: flex;
