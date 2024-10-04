@@ -750,7 +750,7 @@ header {
   line-height: 18.9px;
   color: #435169;
 }
-.text-right .btn {
+.text-right .btn_art {
   background: #8dc63f;
   border-radius: 100px;
   font-weight: 500;
@@ -758,8 +758,9 @@ header {
   line-height: 21.48px;
   color: #fff;
   border: 0;
+  padding: 20px;
 }
-.text-right .btn:hover {
+.text-right .btn_art:hover {
   background: #6fb015;
 }
 
