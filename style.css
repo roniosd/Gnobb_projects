@@ -106,7 +106,7 @@ header {
   color: #000;
 }
 
-.hero {
+ .hero {
   width: 1920px;
   height: 680px;
   background: url("img/home.jpg");
@@ -150,6 +150,42 @@ header {
   font-weight: 500;
   color: #ffffff;
   background: #009ddd;
+}
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.carousel-indicators .indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #6c757d;
+  margin: 0 5px;
+}
+.carousel-indicators .indicator.active {
+  background: #fff;
+  width: 36px;
+  transform: scale(.8, .3);
+  border-radius: 35%;
+  margin: 0 10px;
+
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #6c757d; /* Customize the inactive color */
+  border: none;
+  transition: width 0.3s ease;
+}
+
+.carousel-indicators .active {
+  width: 20px;
+  height: 12px;
+  background-color: #adb5bd; /* Customize the active color */
+  border-radius: 20px; /* Elliptical shape */
 }
 
 /* ========== Boxs ========== */
@@ -694,6 +730,7 @@ header {
 }
 
 /*========= About  section ============ */
+
 .about_hero {
   width: 1920px;
   height: 191px;
@@ -722,12 +759,37 @@ header {
   font-weight: 600;
   line-height: 52.5px;
 }
-.about_hero_container img{
+
+.img {
   width: 680px;
   height: 191px;
   gap: 0px;
-  opacity: 0px;
+  opacity: 0.9;
+  margin-left: 498px;
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
 }
+
+.about_hero_container div {
+  position: relative;
+}
+.about_hero_container div .shadow {
+  width: 234.32px;
+  height: 0px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  border-width: 9px 0 0 0;
+  opacity: 0.41;
+  border-style: solid;
+  border-image: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
+}
+
 /*=============== FOOTER ===============*/
 footer {
   background: var(--dark-color);
@@ -1169,7 +1231,7 @@ footer h4 {
     width: 100%;
     margin: 20px 0;
   }
-  .accordion-button{
+  .accordion-button {
     font-size: 10px;
     width: 100%;
   }
@@ -1429,12 +1491,12 @@ footer h4 {
     text-align: left;
   }
 
-  .right_con{
+  .right_con {
     width: 100%;
     margin-left: 300px;
   }
 
-  .accordion-button{
+  .accordion-button {
     font-size: 10px;
     width: 100%;
   }
