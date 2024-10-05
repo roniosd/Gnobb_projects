@@ -78,7 +78,7 @@ header {
   color: var(--secondary-color);
 }
 
-.collapse .nav_btn {
+.navbar-nav li a.nav_btn {
   padding: 12px 28px 12px 36px;
   border-radius: 100px;
   background: #8dc63f;
@@ -88,14 +88,18 @@ header {
   text-align: right;
   font-weight: 500;
   gap: 10px;
+  color: #fff;
 }
-
+.last_nav {
+  margin-left: 63px;
+}
 .navbar-brand {
   margin-right: 25px;
 }
 
 /*=============== MENU BAR ===============*/
-.menu_bar {
+.menu_bar,
+.close_btn {
   display: none;
   cursor: pointer;
 }
@@ -760,7 +764,7 @@ header {
   border: 0;
   padding: 20px;
 }
-.text-right .btn_art:hover {
+.text-right .btn:hover {
   background: #6fb015;
 }
 
@@ -1134,9 +1138,11 @@ footer h4 {
     margin-left: 0;
   }
   .navbar-nav li a {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 15px;
+    padding-top: 15px;
   }
+
 
   .top-header,
   .bottom-header {
@@ -1152,6 +1158,9 @@ footer h4 {
   }
   .navbar-brand {
     margin-left: 80px;
+  }
+  .navbar-nav li a.nav_btn {
+    width: 170px;
   }
 
   .hero {
@@ -1241,9 +1250,9 @@ footer h4 {
   .collapse .nav_btn {
     width: 200px;
   }
-  .faq-card p { 
+  .faq-card p {
     text-align: left;
-}
+  }
 }
 @media (max-width: 1024px) {
   .collapse .nav_btn {
@@ -1260,6 +1269,15 @@ footer h4 {
   .box .description h2 {
     font-size: 20px;
   }
+
+  .navbar-nav li a {
+    font-size: 6.5px;
+    line-height: 10px;
+    padding-top: 15px;
+  }
+  .navbar-nav li a.nav_btn {
+    margin-right: -30px;
+}
   .box .description p {
     font-size: 15px;
   }
@@ -1465,13 +1483,48 @@ footer h4 {
     width: 100%;
   }
 
-  .navbar-nav {
-    display: none;
-    flex-direction: column;
-  }
-
   .menu_bar {
     display: block;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+  }
+
+  .navbar-nav {
+    display: flex;
+    position: absolute;
+    top: -1000%;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    padding: 0 5%;
+    background: #edffd2;
+    transition: all 2s ease;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    z-index: 200;
+  }
+  .navbar-nav li a.nav_btn {
+    width: 190px;
+    font-size: 24px;
+    margin-left: -50px;
+  }
+  .navbar-nav li a {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 5px;
+    padding-bottom: 50px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .navbar-nav.open {
+    top: 100%;
+  }
+
+  .navbar-nav.open .menu_bar {
+    display: none;
   }
 
   .bottom-header {
