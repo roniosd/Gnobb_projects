@@ -1241,6 +1241,9 @@ footer h4 {
   .collapse .nav_btn {
     width: 200px;
   }
+  .faq-card p { 
+    text-align: left;
+}
 }
 @media (max-width: 1024px) {
   .collapse .nav_btn {
@@ -1276,9 +1279,13 @@ footer h4 {
     font-size: 13px;
     line-height: 21px;
   }
-  .video-play-button img {
-    width: 10px;
-    height: 10px;
+  .video-play-button {
+    width: 50px;
+    height: 50px;
+  }
+  .video-thumbnail .video-play-button img {
+    width: 30px;
+    height: 30px;
   }
   .card_container .allDetails {
     flex-direction: column;
@@ -1290,6 +1297,13 @@ footer h4 {
   }
   .allDetails .left_site .left_card img {
     width: 100%;
+  }
+  .faq-card p {
+    font-size: 15px;
+    text-align: left;
+  }
+  .left_con {
+    width: 300px;
   }
   .right_site {
     display: flex;
@@ -1337,7 +1351,10 @@ footer h4 {
     width: 100%;
   }
   .video_cont {
-    height: 250vh;
+    height: 270vh;
+  }
+  .section-title h2 {
+    padding-top: 56px;
   }
   .section-title {
     width: 100%;
@@ -1600,10 +1617,23 @@ footer h4 {
 }
 
 @media (max-width: 576px) {
+  footer .footer_box {
+    flex-direction: column;
+  }
+  footer {
+    height: 100%;
+  }
   .hero_container h1 {
     font-size: 28px;
   }
-
+  .copyrite_box {
+    font-size: 10px;
+    flex-direction: column;
+  }
+  .contact-card {
+    flex-direction: column;
+    height: 30vh;
+  }
   .bottom-header,
   .top-header {
     flex-direction: column;
@@ -1641,10 +1671,27 @@ footer h4 {
   .accordion-body {
     font-size: 0.8rem;
   }
+  .video-play-button {
+    width: 53px;
+    height: 53px;
+  }
+  .video_cont {
+    height: 155vh;
+  }
   footer .cal {
     margin-top: 30px;
   }
-
+  .card_container {
+    height: 170vh;
+  }
+  .banner_item .discription h2 {
+    font-size: 12px;
+  }
+  .banner h1,
+  .section-title h2 {
+    padding-top: 56px;
+    font-size: 30px;
+  }
   .right_con .accordion {
     margin-left: 0px;
     padding: 20px;
@@ -1708,9 +1755,9 @@ footer h4 {
   .card_container {
     height: 170vh;
   }
-  .about_boxs{
+  .about_boxs {
     height: 160vh;
-}
+  }
   .banner .banner_items {
     margin-left: -80px;
   }
@@ -1829,9 +1876,9 @@ footer h4 {
   .left_con {
     width: 100%;
   }
- .last .accordion{
-  height: 60vh;
- }
+  .last .accordion {
+    height: 60vh;
+  }
   .section_p {
     padding-left: 30px;
     padding-right: 10px;
@@ -1851,7 +1898,6 @@ footer h4 {
   .about_2 .description p {
     font-size: 10px;
   }
-
 
   .copyrite_box p {
     margin: 0;
